@@ -1,7 +1,6 @@
 # Furniture App
 
 ## Live URL
-https://del-furniture.herokuapp.com/
 
 ## Disclaimer
 
@@ -20,3 +19,10 @@ https://del-furniture.herokuapp.com/
 
 - The project is not complete, lots of room for improvement
 - Advanced filtering and Image Carousel hasn't been added
+
+## Local Run
+
+    npm install
+    npm run start:dev
+
+App will be hosted on http://localhost:4000
