@@ -7,7 +7,7 @@ export class ProductsService {
   getProducts(filter: ProductFilter): Products {
     const filtered = products.filter(product => {
       return (
-        product.name.toLowerCase().includes(filter.query) &&
+        product.name.toLowerCase().includes(filter.query.toLowerCase()) &&
         product.price >= +filter.min &&
         product.price <= +filter.max
       );
