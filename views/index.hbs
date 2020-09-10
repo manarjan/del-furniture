@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/external/nouislider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>Furniture App</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+
+        <header>
+            <nav class="z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="nav-links">
+                        <a href="#" class="logo hide-on-med-and-down"><img src="public/assets/logo.png" alt="Logo"></a>
+                        <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="hide-on-med-and-down">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">MAGAZINE</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="nav-links actions">
+                        <div class="d-flex black-text">
+                            <label class="label-icon" for="search"><i
+                                    class="material-icons black-text">search</i></label>
+                            <input id="search" type="search" required>
+
+                        </div>
+                        <ul>
+
+                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                            <li>
+                                <a href="#">LOGIN</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+            <div class="sidenav" id="mobile">
+                <div class="container">
+
+                    <a href="#" class="logo "><img src="public/assets/logo.png" alt="Logo"></a>
+
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">MAGAZINE</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <br>
+        <main>
+            <div id="app">
+            </div>
+
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.6.3/rxjs.umd.min.js"
+        integrity="sha512-JnZPWAckMDks0CCIeGznqEo7ifmYK7VowHq/NVFlSXGkwxv4OBCJFy7nouOtJZmVldHo7FQLIdeWTI55yyZc4Q=="
+        crossorigin="anonymous"></script>
+    <script src="public/js/external/nouislider.min.js"></script>
+
+    <script src="public/js/polyfill.js"></script>
+    <script src="public/js/bundle.js"></script>
+</body>
+
+</html>

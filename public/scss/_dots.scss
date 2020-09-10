@@ -1,0 +1,28 @@
+.color {
+  display: flex;
+  margin-top: 10px;
+  .color-dot {
+    margin-right: 15px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 50%;
+    &.active {
+      &::after {
+        position: absolute;
+        content: '✓';
+        font-size: xx-small;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(#000000, 0.1);
+        color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+}

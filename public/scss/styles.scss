@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  ::-webkit-scrollbar {
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+}
+
+.container-fluid {
+  position: relative;
+  margin: 0 250px;
+  height: 100%;
+  @media screen and (max-width: 1200px) {
+    margin: 0 100px;
+  }
+  @media screen and (max-width: 900px) {
+    margin: 0 20px;
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 64px;
+  width: 100%;
+}
+main {
+  position: absolute;
+  @media screen and (max-width: 900px) {
+    padding-right: 0px;
+  }
+  top: 64px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  #app {
+    height: 100%;
+  }
+}
+
+.error {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+@import 'header';
+@import 'spinner';
+@import 'landing';
+@import 'product';
+@import 'dots';
+@import 'pagination';
+@import 'helpers';
